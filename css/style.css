@@ -23,7 +23,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -306,6 +306,7 @@
 
 .list-item {
   font-size: 1.8rem;
+  line-height: 1.2;
   display: flex;
   align-items: center;
   gap: 1.6rem;
