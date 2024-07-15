@@ -119,4 +119,98 @@
   .btn--form {
     margin-top: 1.2rem;
   }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translatey(-100%);
+    transition: all 0.5s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Hide Navigation */
+    /* Allows No transition */
+    /* display: none; */
+    /*1. Hide Element Visulally */
+    opacity: 0;
+    /* 2. Make it unaccesaible to Mouse & Keyboard */
+    pointer-events: none;
+    /* 3. Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translatey(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/*********************************/
+/* Below 7044px (Smaller Tablets)*/
+/*********************************/
+
+@media (max-width: 44em) {
+  .grid--3-col,
+  .grid--4-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diets {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .grid-footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
 }
