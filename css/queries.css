@@ -70,7 +70,7 @@
 
   .hero {
     grid-template-columns: 1fr;
-    padding: 0 8rem;
+    padding: 08rem;
     gap: 6.4rem;
   }
 
@@ -176,7 +176,7 @@
 }
 
 /*********************************/
-/* Below 7044px (Smaller Tablets)*/
+/* Below 704px (Smaller Tablets)*/
 /*********************************/
 
 @media (max-width: 44em) {
@@ -212,5 +212,89 @@
   .logo-col,
   .address-col {
     grid-column: span 3;
+  }
+}
+
+/*********************************/
+/* Below 540px (Phones)*/
+/*********************************/
+
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-col,
+  .grid--3-col,
+  .grid--4-col {
+    grid-template-columns: 1fr;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 3.2rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .section-how {
+    padding: 8rem 0;
+  }
+
+  .section-meals {
+    padding: 8rem 0;
+  }
+
+  .testimonials-container {
+    padding: 8rem 3.2rem;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
+  .cta-image-box {
+    height: 32rem;
+    grid-row: 1;
   }
 }
