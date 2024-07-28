@@ -56,6 +56,9 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  /* To Add Smooth Scrolling also added JS for Scrolling*/
+  /* scroll-behavior: smooth;
+  transition: all 0.3; */
 }
 
 body {
